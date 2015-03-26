@@ -50,7 +50,7 @@ app.factory("PageNavTabsService", ['$cookieStore', function($cookieStore){
                 navtabs[id] = tabObj[id];
                 navtabsKeys = Object.keys(navtabs);
                 navtabsLength = navtabsKeys.length;
-                if (id === 1){
+                if (id === 1 && navtabsLength > 1){
                     var i, x;
                     for(i = 1; i < navtabsLength; i++){
                         x = i + 1;
